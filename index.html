@@ -14,13 +14,77 @@
         --color-tertiary: #111111;
       }
     </style>
+    <link rel="stylesheet" href="./styles/style.css" />
     <link
       rel="shortcut icon"
       href="./assets/logo-header.png"
       type="image/x-icon"
     />
+    <script
+      src="https://kit.fontawesome.com/7166c8c0eb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold text-tertiary">Hello Pet Lovers!</h1>
+  <body class="font-sora">
+    <header>
+      <nav class="bg-[#FFF9F4] border-b border-tertiary/40 md:border-b-0">
+        <div class="flex justify-between items-center p-4 max-w-7xl mx-auto">
+          <div class="flex flex-row items-center gap-2">
+            <img src="./assets/logo-header.png" alt="Site Logo" />
+            <h1 class="hidden md:block text-3xl">
+              Browse<span class="text-accent">4</span>Pets
+            </h1>
+          </div>
+          <div>
+            <ul class="hidden md:flex space-x-4">
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="hidden md:flex space-x-4 items-center">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button
+              class="border-1 border-accent px-8 py-2 rounded-md hover:bg-accent hover:text-primary"
+            >
+              Login
+            </button>
+            <button class="bg-accent px-8 py-2 rounded-md hover:text-primary">
+              Register
+            </button>
+          </div>
+          <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </nav>
+      <div class="hero md:relative max-w-7xl mx-auto">
+        <div
+          class="hero-content z-50 md:absolute w-full md:w-1/2 flex flex-col gap-5 justify-between items-start mt-8 md:mt-24 p-4"
+        >
+          <h2 class="font-adlam-display text-4xl md:text-6xl">
+            Pamper Your Pet, Because They Deserve the Bes
+          </h2>
+          <p class="text-tertiary text-base md:text-lg">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="bg-accent px-8 py-2 rounded-md flex flex-row items-center relative"
+          >
+            Find a pet
+            <span class="absolute -top-1 -right-1 flex size-3">
+              <span
+                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-yellow-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex size-3 rounded-full bg-yellow-500"
+              ></span>
+            </span>
+          </button>
+        </div>
+        <img src="./assets/cat-big.png" alt="" />
+      </div>
+    </header>
+    <main class="max-w-7xl mx-auto"></main>
   </body>
 </html>
